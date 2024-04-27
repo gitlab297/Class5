@@ -1,12 +1,8 @@
 class Car:
     price = 1000000
-    horse_powers = 200
 
-    def __init__(self, horse_powers):
-        self.horse_powers = horse_powers
-
-    def __str__(self):
-        return 'Машина {} цена {} мощность {}'.format(self.__class__.__name__, self.price, self.horse_powers)
+    def horse_powers(self, horse=100):
+        return horse
 
 
 class Nissan(Car):
@@ -17,7 +13,7 @@ class Kia(Car):
     price = 1500000
 
 
-nissan_car = Nissan(horse_powers=300)
-kia_car = Kia(horse_powers=250)
-print(nissan_car)
-print(kia_car)
+Nissan.horse = 250
+print('Машина Nissan цена {} мощность {}'.format(Nissan.price, Nissan.horse))
+Kia.horse = 150
+print('Машина Kia цена {} мощность {}'.format(Kia.price, Kia.horse))
