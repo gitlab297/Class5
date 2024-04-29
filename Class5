@@ -2,18 +2,15 @@ class Car:
     price = 1000000
 
     def horse_powers(self):
-        return self.horse_powers()
+        return 100
+
 
 
 class Nissan(Car):
     price = 2500000
-    Car.horse_powers = 250
+    horse_powers = 250
 
 
 class Kia(Car):
     price = 1500000
-    Car.horse_powers = 150
-
-
-print('Машина Nissan цена {} мощность {}'.format(Nissan.price, Nissan.horse_powers))
-print('Машина Kia цена {} мощность {}'.format(Kia.price, Kia.horse_powers))
+    horse_powers = 150
