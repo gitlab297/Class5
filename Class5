@@ -8,9 +8,11 @@ class Car:
 
 class Nissan(Car):
     price = 2500000
-    Car.horse_powers = 250
+    def horse_powers(self):
+        return 250
 
 
 class Kia(Car):
     price = 1500000
-    Car.horse_powers = 150
+    def horse_powers(self):
+        return 150
