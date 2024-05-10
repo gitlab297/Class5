@@ -8,9 +8,9 @@ class Car:
 
 class Nissan(Car):
     price = 2500000
-    horse_powers = 250
+    Car.horse_powers = 250
 
 
 class Kia(Car):
     price = 1500000
-    horse_powers = 150
+    Car.horse_powers = 150
